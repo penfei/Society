@@ -18,7 +18,7 @@ public class HexCellShaderData : MonoBehaviour {
 
 	public void Initialize (int x, int z) {
 		if (cellTexture) {
-			cellTexture.Reinitialize(x, z);
+			cellTexture.Resize(x, z);
 		}
 		else {
 			cellTexture = new Texture2D(

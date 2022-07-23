@@ -63,4 +63,12 @@ namespace Society.Characters
             return result == 0 ? 1 : result;
         }
     }
+
+    //public class ByPriority : IComparer<Character>
+    //{
+    //    public int Compare(Character ch1, Character ch2)
+    //    {
+    //        return ch2.Priority - ch1.Priority;
+    //    }
+    //}
 }

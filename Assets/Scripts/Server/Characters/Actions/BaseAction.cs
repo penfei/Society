@@ -28,11 +28,16 @@ namespace Society.Characters
 
         public virtual void Interrupt()
         {
+            _timer.Stop();
+            _timer.Dispose();
+
             OnActionInterrupt?.Invoke();
         }
 
         public virtual void End()
         {
+            _timer.Dispose();
+
             OnActionEnd?.Invoke();
         }
 
